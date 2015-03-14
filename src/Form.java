@@ -3,6 +3,8 @@ import com.sun.javafx.css.FontUnits;
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 /**
  * @Author: Scorpion
@@ -71,7 +73,13 @@ public class Form extends JPanel {
         setElementPosition(2, 1);
         add(closeButton, myConstraints);
 
-
+        okButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String username = usernameTextField.getText();
+                String email = emailTextField.getText();
+            }
+        });
 
 
 
