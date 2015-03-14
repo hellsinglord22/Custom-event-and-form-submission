@@ -6,7 +6,16 @@ import java.util.EventObject;
  */
 public class FormEvent extends EventObject {
 
+    /*Attributes*/
+    private String username , email;
+
     public FormEvent(Object source) {
         super(source);
+    }
+
+    public FormEvent(Object source, String username, String email) {
+        super(source);
+        this.username = username;
+        this.email = email;
     }
 }
