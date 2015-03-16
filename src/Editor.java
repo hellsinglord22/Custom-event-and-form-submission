@@ -9,13 +9,18 @@ public class Editor extends JPanel {
     // Attributes //
     private JTextArea customTextArea;
 
+
     /*Constructor*/
     public Editor() {
+        /// Initialize Attributes ///
+        customTextArea = new JTextArea();
+
         /// Properties ///
         setLayout(new BorderLayout());
 
-        /// Initialize Attributes ///
-        customTextArea = new JTextArea();
+        /// add textArea ///
+        add(customTextArea);
+
 
     }
 
