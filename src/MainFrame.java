@@ -14,6 +14,7 @@ public class MainFrame extends JFrame {
     /*Attributes*/
     private Form customForm;
     private Container myContainer;
+    private Editor myEditor;
 
 
     /*Constructor*/
@@ -28,16 +29,18 @@ public class MainFrame extends JFrame {
         /// Initialize Attributes //
         customForm =new Form();
         myContainer = getContentPane();
+        myEditor = new Editor();
 
         /// add elements to the frame (Windows) ///
         myContainer.add(customForm, BorderLayout.CENTER);
+        myContainer.add(myEditor, BorderLayout.WEST);
 
 
         /// Rooting communication ////
         customForm.addFormListener(new FormListener() {
             @Override
             public void formEventOccurred(FormEvent e) {
-                
+
             }
         });
 
