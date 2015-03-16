@@ -8,6 +8,7 @@ import java.awt.*;
 public class Editor extends JPanel {
     // Attributes //
     private JTextArea customTextArea;
+    private Dimension checkSize = getPreferredSize();
 
     /*Constructor*/
     public Editor() {
@@ -16,6 +17,9 @@ public class Editor extends JPanel {
 
         /// Initialize Attributes ///
         customTextArea = new JTextArea();
+
+        // printing dem ///
+        System.out.println(checkSize);
 
     }
 
