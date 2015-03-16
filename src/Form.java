@@ -18,6 +18,7 @@ public class Form extends JPanel {
     private JButton okButton , closeButton;
     private GridBagConstraints myConstraints;
     private Border innerBorder , outerBorder;
+    private FormListener customFormListener;
 
     /*Constructor*/
     public Form() {
@@ -90,6 +91,13 @@ public class Form extends JPanel {
         myConstraints.gridy = row;
         myConstraints.gridx = column;
     }
+
+
+    /// add FormListener ///
+    public void addFormListener(FormListener customFormListener) {
+        this.customFormListener = customFormListener;
+    }
+
 
 
 
