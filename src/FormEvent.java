@@ -9,6 +9,7 @@ public class FormEvent extends EventObject {
     /*Attributes*/
     private String username , email;
 
+
     /*Constructor*/
     public FormEvent(Object source) {
         super(source);
@@ -32,4 +33,6 @@ public class FormEvent extends EventObject {
     public void setUsername(String username) {
         this.username = username;
     }
+
+
 }

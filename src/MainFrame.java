@@ -31,5 +31,15 @@ public class MainFrame extends JFrame {
 
         /// add elements to the frame (Windows) ///
         myContainer.add(customForm, BorderLayout.CENTER);
+
+
+        /// Rooting communication ////
+        customForm.addFormListener(new FormListener() {
+            @Override
+            public void formEventOccurred(FormEvent e) {
+                
+            }
+        });
+
     }
 }
