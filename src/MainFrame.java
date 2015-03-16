@@ -40,7 +40,7 @@ public class MainFrame extends JFrame {
         customForm.addFormListener(new FormListener() {
             @Override
             public void formEventOccurred(FormEvent e) {
-
+                myEditor.append(e.getUsername() + "|" + e.getEmail()+"\n");
             }
         });
 
