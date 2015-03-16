@@ -28,8 +28,8 @@ public class Form extends JPanel {
         outerBorder = BorderFactory.createEmptyBorder(5, 5, 5, 5);
         usernameLabel = new JLabel("user name: ");
         emailLabel = new JLabel("email: ");
-        usernameTextField = new JTextField(20);
-        emailTextField = new JTextField(20);
+        usernameTextField = new JTextField(15);
+        emailTextField = new JTextField(15);
         okButton = new JButton("OK");
         closeButton = new JButton("CLOSE");
         myConstraints = new GridBagConstraints();
@@ -60,6 +60,7 @@ public class Form extends JPanel {
         add(emailLabel, myConstraints);
 
         myConstraints.anchor = GridBagConstraints.LINE_START;
+        setElementPosition(1, 1);
         add(emailTextField, myConstraints);
 
         /// Row Three ///
