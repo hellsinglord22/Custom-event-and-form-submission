@@ -80,6 +80,10 @@ public class Form extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 String username = usernameTextField.getText();
                 String email = emailTextField.getText();
+
+                if (customFormListener != null) {
+                    customFormListener.formEventOccurred(new FormEvent(this,username,email));
+                }
             }
         });
 
