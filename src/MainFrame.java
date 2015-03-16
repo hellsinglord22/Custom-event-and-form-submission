@@ -32,8 +32,8 @@ public class MainFrame extends JFrame {
         myEditor = new Editor();
 
         /// add elements to the frame (Windows) ///
-        myContainer.add(customForm, BorderLayout.CENTER);
-        myContainer.add(myEditor, BorderLayout.WEST);
+        myContainer.add(customForm, BorderLayout.WEST);
+        myContainer.add(myEditor, BorderLayout.CENTER);
 
 
         /// Rooting communication ////
